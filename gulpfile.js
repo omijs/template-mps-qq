@@ -89,13 +89,13 @@ function compile(file, watch) {
   console.log('[编译完成]'.green ,  file.path)
 
   const res = prettier.format(template, { parser: "angular" })
-  console.log('[代码美化]'.green , name + '.wxml' )
+  console.log('[代码美化]'.green , name + '.qml' )
 
-  fs.writeFileSync(dir + '/' + name + '.wxml', res)
-  console.log('[写入文件]' .green , name + '.wxml')
+  fs.writeFileSync(dir + '/' + name + '.qml', res)
+  console.log('[写入文件]' .green , name + '.qml')
 
   if(watch){
-    console.log('[编译完成]'.green , name + '.wxml' )
+    console.log('[编译完成]'.green , name + '.qml' )
     console.log('[监听更改]'.green, '...' )
   }
 }
@@ -110,11 +110,11 @@ function compileLess(file, watch) {
     }, function (e, output) {
     console.log('[编译完成]'.green, file.path)
 
-    fs.writeFileSync(dir + '/' + name + '.wxss', output.css)
-    console.log('[写入文件]'.green, name + '.wxss')
+    fs.writeFileSync(dir + '/' + name + '.qss', output.css)
+    console.log('[写入文件]'.green, name + '.qss')
 
     if (watch) {
-      console.log('[编译完成]'.green, name + '.wxss')
+      console.log('[编译完成]'.green, name + '.qss')
       console.log('[监听更改]'.green, '...')
     }
   });
