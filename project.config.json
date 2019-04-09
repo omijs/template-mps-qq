@@ -12,7 +12,40 @@
 	"createTime": 1554797023622,
 	"accessTime": 1554797023622,
 	"packOptions": {
-		"ignore": []
+		"ignore": [
+			{
+				"type": "folder",
+				"value": "_scripts"
+			},
+			{
+				"type": "folder",
+				"value": "node_modules"
+			},
+			{
+				"type": "file",
+				"value": "package.json"
+			},
+			{
+				"type": "file",
+				"value": "package-lock.json"
+			},
+			{
+				"type": "file",
+				"value": "gulpfile.js"
+			},
+			{
+				"type": "suffix",
+				"value": ".jsx"
+			},
+			{
+				"type": "suffix",
+				"value": ".less"
+			},
+			{
+				"type": "folder",
+				"value": "common-less"
+			}
+		]
 	},
 	"debugOptions": {
 		"hidedInDevtools": []
